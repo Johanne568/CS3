@@ -110,4 +110,8 @@ body {
 	height:60px;  
 	width:300px; 
 	float:center;
+} 
+
+header { 
+	position:sticky;
 }
