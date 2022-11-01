@@ -1,0 +1,84 @@
+body {
+	box-sizing:border-box; 
+	margin:0px; 
+	padding:0px:   
+}  
+
+#header { 
+	text-align:left;  
+	margin-top:-5px;
+	padding:40px 0; 
+	background-color:orange;  
+	border:3px solid black;
+}  
+.section {
+	width:45%;
+	float:left; 
+	padding-left:10px; 
+}  
+
+.section {
+	position:relative; 
+	border-radius:20px;
+	border:3px solid black; 
+	margin-left:20px; 
+}
+	
+.section {  
+	margin-right:10px; 
+	background-color:#EEE;  
+}
+body {
+	background-image:url("Bgwildfire.jpg"); 
+}
+
+#name {  
+	height:60px;  
+	width:300px;   
+	float:left;
+	z-index:1;
+} 
+
+#name {
+	padding-left:20px; 
+	padding-top:15px;
+}  
+
+body {  
+	font-family:Sans-serif;
+}  
+
+#title {  
+    border-radius:25px;
+	padding:10px;
+	background-color:#EEE; 
+	border:3px solid black;
+} 
+
+#footer {
+	text-align:left; 
+	float:bottom;
+	padding-top: 600px; 
+	color: white;
+}  
+
+#footer {
+	text-align:center;
+} 
+
+#links { 
+	padding:50px;
+	background-color:blue; 
+} 
+#name2 { 
+	height:60px;  
+	width:300px; 
+	float:center; 
+	
+} 
+
+#eh {
+	Background-color:grey;   
+	border:3px solid black;
+	padding:10px; 
+} 

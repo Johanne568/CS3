@@ -1,0 +1,113 @@
+body {
+	box-sizing:border-box; 
+	margin:0px; 
+	padding:0px:   
+}  
+
+h1 { 
+	text-align:left;  
+	margin-top:-5px;
+	padding:40px 0; 
+	background-color:orange;  
+	border:3px solid black;
+} 
+
+.section {
+	width:33%;
+	float:left; 
+	padding-top:30px;
+}
+
+.article {
+	position:relative; 
+	border-radius:20px;
+	border:3px solid black; 
+	margin-left:10px; 
+	margin-right:10px; 
+	background-color:#EEE; 
+}   
+
+.image {   
+	position:relative;  
+	border-radius:19px;
+	
+} 
+
+.image { 
+	width:419px; 
+	height:300px; 
+}
+
+#footer {
+	text-align:left; 
+	float:bottom;
+	padding-top: 700px; 
+	color: white;
+}  
+
+#footer {
+	text-align:center;
+}
+
+body {
+	background-color:blue;
+
+} 
+#p {
+	margin-bottom:72px
+} 
+ 
+#eh {
+	Background-color:grey;  
+	padding:10px; 
+	border:3px solid black;
+} 
+
+.div { 
+	padding-top:30px;  
+	text-align:center;
+} 
+
+.text {
+	padding-left:10px; 
+	padding-right:10px;
+} 
+
+.disaster{
+	text-align:center;
+}
+
+body {  
+	font-family:Sans-serif;
+} 
+
+#d {
+	padding-bottom:19px
+} 
+
+body {
+	background-image:url("Bghome.jpg") 
+} 
+
+#name {  
+	height:60px;  
+	width:300px;   
+	float:left;
+	z-index:1;
+} 
+
+#name {
+	padding-left:20px; 
+	padding-top:15px;
+} 
+
+#links { 
+	padding:50px;
+	background-color:navy; 
+	border:3px solid black;
+} 
+#name2 { 
+	height:60px;  
+	width:300px; 
+	float:center;
+}
