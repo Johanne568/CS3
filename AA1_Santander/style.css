@@ -38,15 +38,15 @@ p {
 	margin-right:5px;
 } 
 
-#beef { 
+h2:first-of-type { 
 	background-color:blue;
 }
 
-#chicken {
+h2:nth-of-type(2) {
 	background-color:yellow;
 }
 
-#pork {
+h2:last-child {
 	background-color:pink; 
 } 
 video {
