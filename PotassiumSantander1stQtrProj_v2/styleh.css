@@ -119,6 +119,6 @@ header {
 	position:sticky;
 }  
 @media screen and (max-width: 800px) {
-section, article {
+.left, .mid, .right {
     width: 100%;    
 }
