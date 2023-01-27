@@ -125,7 +125,15 @@ header {
     width: 100%;    
 } 
 	
-#left:link {}
+#left:link { 
+	position:relative; 
+	border-radius:20px;
+	border:3px solid black; 
+	margin-left:10px; 
+	margin-right:10px; 
+	background-color:#EEE; 
+	height:100%; 
+	}
 				
 #left:visited {}
 #left:hover { 
