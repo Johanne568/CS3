@@ -35,18 +35,6 @@ article {
 	
 }   
 
-#left:hover { 
-	transform: scale (1.5, 1.5) 
-}
-
-#mid:hover { 
-	transform: scale (1.5, 1.5) 
-}
-
-#right:hover { 
-	transform: scale (1.5, 1.5) 
-}
-
 .image { 
 	float:center;
 	position:relative;  
