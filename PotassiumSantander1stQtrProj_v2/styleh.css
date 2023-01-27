@@ -32,7 +32,7 @@ article {
 
 #left:hover { 
 	transform: scale (1.5, 1.5) 
-	}
+}
 	
 #left:active { 
 	<a href="Typhoon.html"></a>
@@ -44,15 +44,15 @@ article {
 	
 #mid:active { 
 	<a href="Earthquake.html"></a>
-	} 
+} 
 
 #right:hover { 
 	transform: scale (1.5, 1.5) 
-	}
+}
 	
 #right:active { 
 	<a href="Wildfires.html"></a>
-	}
+}
 			
 				
 
