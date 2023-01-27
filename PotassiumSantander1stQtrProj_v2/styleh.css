@@ -9,7 +9,8 @@ h1 {
 	margin-top:-5px;
 	padding:40px 0; 
 	background-color:orange;  
-	border:3px solid black;
+	border:3px solid black; 
+	width:100%;
 } 
 	
 section {
