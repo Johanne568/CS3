@@ -12,13 +12,13 @@ h1 {
 	border:3px solid black;
 } 
 
-.section {
+section {
 	width:33%;
 	float:left; 
 	padding-top:30px;
 }
 
-.article {
+article {
 	position:relative; 
 	border-radius:20px;
 	border:3px solid black; 
@@ -27,25 +27,25 @@ h1 {
 	background-color:#EEE; 
 }   
 
-.image {   
+image {   
 	position:relative;  
 	border-radius:19px;
 	
 } 
 
-.image { 
+image { 
 	width:419px; 
 	height:300px; 
 }
 
-#footer {
+footer {
 	text-align:left; 
 	float:bottom;
 	padding-top: 700px; 
 	color: white;
 }  
 
-#footer {
+footer {
 	text-align:center;
 }
 
