@@ -118,7 +118,7 @@ body {
 header { 
 	position:sticky;
 }  
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
 .left, .mid, .right {
     width: 100%;    
 }
