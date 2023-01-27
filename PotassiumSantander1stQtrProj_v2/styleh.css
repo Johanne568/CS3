@@ -58,7 +58,7 @@ body {
 
 } 
 #p {
-	margin-bottom:72px
+	margin-bottom:72px;
 } 
  
 #eh {
@@ -125,22 +125,19 @@ header {
     width: 100%;    
 } 
 	
-#left:link { 
-	position:relative; 
-	border-radius:20px;
-	border:3px solid black; 
-	margin-left:10px; 
-	margin-right:10px; 
-	background-color:#EEE; 
-	height:100%; 
-	}
-				
-#left:visited {}
 #left:hover { 
 	transform: scale (1.5, 1.5) 
 	}
 	
 #left:active { 
 	<a href="Typhoon.html"></a>
+	} 
+
+#mid:hover { 
+	transform: scale (1.5, 1.5) 
+	}
+	
+#mid:active { 
+	<a href="Earthquake.html"></a>
 	}
 				
