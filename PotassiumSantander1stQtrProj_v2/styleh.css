@@ -25,12 +25,13 @@ article {
 	margin-left:10px; 
 	margin-right:10px; 
 	background-color:#EEE; 
+	height:100%;
 }   
 
 .image { 
 	float:center;
 	position:relative;  
-	border-radius:19px;
+	border-radius:20px;
 	
 } 
 
