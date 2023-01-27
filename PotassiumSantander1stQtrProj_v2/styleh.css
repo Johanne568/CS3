@@ -125,12 +125,14 @@ header {
     width: 100%;    
 } 
 	
-#left:link 
+#left:link {}
 				
-#left:visited {
+#left:visited {}
 #left:hover { 
-	transform: scale (1.5, 1.5) }
+	transform: scale (1.5, 1.5) 
+	}
 	
 #left:active { 
 	<a href="Typhoon.html"></a>
+	}
 				
