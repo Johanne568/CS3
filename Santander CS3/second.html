@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+	<style> 
+		img {
+		width: 500px;
+		height: 500px;
+		}
+	</style>
+	</head> 
+	<body>  
+	<div>
+	<button onclick="happy()">Press for Happy</button> 
+	<button onclick="sad()">Press for Sad</button> 
+	<img id="image" src="happy.jpg" alt="happy"> 
+	<div>
+	<script> 
+	function happy(){
+	document.getElementById("image").src = "happy.jpg" ;
+	}
+	function sad(){
+	document.getElementById("image").src ="sad.jpg";
+	}
+	</script> 
+	</body> 
+</html>
+	
