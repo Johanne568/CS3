@@ -115,29 +115,30 @@
 		
 		function checkWinner() {
 		if (player === "ROCK") {
-		if (random === 0) {
-		cscore++;
-		computerScore.textContent = cscore;
+		if (random === 0 ) {
 		} else if (random === 1) {
-       		pscore++;
-        	playerScore.textContent = pscore;
-		} 
+       		cscore++;
+		computerScore.textContent = cscore;
+		} else {
+		pscore++;
+       	 	playerScore.textContent = pscore;
+		}
 		}
 		if (player ==="PAPER"){
 		if (random === 0) {
-		cscore++;
-		computerScore.textContent = cscore;
-		} else if (random === 1) {
 		pscore++;
        	 	playerScore.textContent = pscore;
-		} else {
+		} else if (random === 1) {
+		} else { 
+		cscore++;
+		computerScore.textContent = cscore;
 		}
 		} 
 		
 		if (player ==="SCISSOR"){
 		if (random === 0) {
         	cscore++;
-        	computerScore.textContent = cscore;
+		computerScore.textContent = cscore;
 		} else if (random === 1) {
         	pscore++;
         	playerScore.textContent = pscore;
