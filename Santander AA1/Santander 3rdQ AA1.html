@@ -114,30 +114,41 @@
 		}
 		
 		function checkWinner() {
-		if (player === "ROCK") {
-		if (random === 0 ) {
-		playerScore = document.getElementById("pScore");
-		computerScore = document.getElementById("cScore");
-		} else if (random === 1) {
-       		cscore++;
-		computerScore.textContent = cscore;
-		} else {
-		pscore++;
-       	 	playerScore.textContent = pscore;
+			switch (player) {
+				case "ROCK":
+					if (random === 0) {
+					} else if (random === 1) {
+					cscore++;
+					computerScore.textContent = cscore;
+					} else {
+					pscore++;
+					playerScore.textContent = pscore;
+					}
+					break;
+				case "PAPER":
+					if (random === 0) {
+					pscore++;
+					playerScore.textContent = pscore;
+					} else if (random === 1) {
+					} else {
+					cscore++;
+					computerScore.textContent = cscore;
+					}
+					break;
+				case "SCISSOR":
+					if (random === 0) {
+					cscore++;
+					computerScore.textContent = cscore;
+					} else if (random === 1) {
+					pscore++;
+					playerScore.textContent = pscore;
+					} else {
+					}
+				break;
+			default:
+				break;
+			}
 		}
-		}
-		if (player ==="PAPER"){
-		if (random === 0) {
-		pscore++;
-       	 	playerScore.textContent = pscore;
-		} else if (random === 1) {
-		playerScore = document.getElementById("pScore");
-		computerScore = document.getElementById("cScore");
-		} else { 
-		cscore++;
-		computerScore.textContent = cscore;
-		}
-		} 
 		
 		if (player ==="SCISSOR"){
 		if (random === 0) {
