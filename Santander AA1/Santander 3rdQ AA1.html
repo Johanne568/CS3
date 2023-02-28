@@ -116,6 +116,8 @@
 		function checkWinner() {
 		if (player === "ROCK") {
 		if (random === 0 ) {
+		playerScore = document.getElementById("pScore");
+		computerScore = document.getElementById("cScore");
 		} else if (random === 1) {
        		cscore++;
 		computerScore.textContent = cscore;
@@ -129,6 +131,8 @@
 		pscore++;
        	 	playerScore.textContent = pscore;
 		} else if (random === 1) {
+		playerScore = document.getElementById("pScore");
+		computerScore = document.getElementById("cScore");
 		} else { 
 		cscore++;
 		computerScore.textContent = cscore;
