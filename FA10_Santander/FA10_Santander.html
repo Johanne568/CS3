@@ -1,0 +1,23 @@
+<!DOCTYPE html> 
+<html>  
+	<head>
+	</head> 
+	<body> 
+		<div id="rn">
+		</div>
+		<div id="br"> 
+		</div>
+		<script> 
+		var random; 
+		var t;
+		var h; 
+		var o;
+		random = Math.floor(Math.random() * 1000); 
+		document.getElementById("rn").innerHTML = "Randomly Generated Number: "+random; 
+		t = (Math.floor(random%100/10)*10);
+		h = (Math.floor(random/100)*100); 
+		o = random%(t+h); 
+		document.getElementById("br").innerHTML = "Breakdown: " + h + ", " + t + ", " + o;
+		</script>   
+	</body>
+</html>	
