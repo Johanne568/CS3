@@ -1,0 +1,29 @@
+<!DOCTYPE html> 
+<html>  
+	<head>
+	</head> 
+	<body> 
+		<div id="rn">
+		</div>
+		<div id="br"> 
+		</div>
+		<script> 
+		var random; 
+		var h = prompt ('Please enter the length of side A');
+		var o = prompt ('Please enter the length of side B'); 
+		var a = prompt ('Please enter the length of side C'); 
+		document.getElementById("rn").innerHTML = "Triangle sides length: " + "|Hypotenuse=" + h + "|Opposite= " + o + "|Adjacent= " + a + "|"; 
+		function determineTriangle() { 
+			if (h === o && o === a && h == a) {
+			alert("Type of triangle: EQUILATERAL");
+			}  
+			if (h !== o && o !== a && h != a) {
+			alert("Type of triangle: SCALENE");
+			} 
+			else {
+			alert("Type of triangle: ISOCELES");}
+		}  
+		determineTriangle();
+		</script>   
+	</body>
+</html>	
