@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> My Online Shop</title>
+    <!-- type in the necessary meta tags -->
+	<style>
+      span {color: blue; text-decoration:underline}
+      button {width: 100px; padding: 5px; background: pink;}
+	</style>
+
+	</head>
+<body>
+	<h1> Welcome to Yohan's Online Shop </h1>
+	<h2> Please select from the following items </h2>
+	<!--- provide your own 3 items and their prices in the list --->
+	<ol>
+		<li> Gaming Mouse (ITEM #1) price: 500.00 </li>
+		<li> Mechanical Keyboard (ITEM #2) price: 2,500.00 </li>
+		<li> Gaming Chair (ITEM #3) price: 5,000.00 </li>
+	</ol>
+	<!-- the following will be used to display purchase information -->
+    <p> Item selected : <span id="item"></span> </p>
+	<p> Qty bought : <span id="qty"></span> </p>
+	<p> Amount to pay for the item: <span id="bill"></span> </p>
+	<p> Current Total Bill <span id="tbill"></span></p>
+	<button onclick = "itemNo()"> Buy an Item </button>
+	<button onclick = "remove()"> Clear </button>
+    
+    <script>
+		var total = 0; 
+		var tbill2;
+		function itemNo() { 
+		<!--Asking the user which items are they going to buy-->
+		itemN = prompt("Please enter the item# of the item you want to buy:");  
+		<!--Confirming if the input was a number-->
+		if (isNaN(itemN)){
+		alert("Your Input is invalid"); 
+		return;
+		}  
+		<!--Asking the user how many are they going to buy-->
+		itemQty = prompt("Please enter the quantity of the item you want to buy:");  
+		<!--Confirming if the input was a number-->
+		if (isNaN(itemN)){
+		alert("Your Input is invalid"); 
+		return; 
+		} 
+		<!--Outputting the item name, price, and computing the total-->
+		if (itemN == 1){
+		document.getElementById("item").innerHTML = "Gaming Mouse";  
+		document.getElementById("qty").innerHTML = itemQty;
+		document.getElementById("bill").innerHTML = 500; 
+		total = total + itemQty * 500;
+		document.getElementById("tbill").innerHTML = total ;
+		}else if (itemN == 2){
+		document.getElementById("item").innerHTML = "Mechanical Keyboard"; 
+		document.getElementById("qty").innerHTML = itemQty;
+		document.getElementById("bill").innerHTML = 2500;
+		total = total + itemQty * 2500;
+		document.getElementById("tbill").innerHTML = total ;
+		}else if (itemN == 3){
+		document.getElementById("item").innerHTML = "Gaming Chair"; 
+		document.getElementById("qty").innerHTML = itemQty;
+		document.getElementById("bill").innerHTML = 5000; 
+		total = total+ itemQty * 5000;
+		document.getElementById("tbill").innerHTML = total ;} 
+		} 
+		<!--Code for clearing the items and total bills-->
+		function remove() {  
+		document.getElementById("item").innerHTML = ""; 
+		document.getElementById("qty").innerHTML = "";
+		document.getElementById("bill").innerHTML = ""; 
+		document.getElementById("tbill").innerHTML = "";
+		}
+		</script>
+</body>
+
+</html>
+
