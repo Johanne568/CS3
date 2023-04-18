@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<style>
+	table, td{
+		border: 1px solid;
+	}
+</style>
+<body> 
+	<p>[enter a number between 2 and 10]</p>
+	<input type="number" id="num1"/>
+	<input type="number" id="num2"/>
+	<br>
+	<button onclick="multiTable()"> Click when you're ready!</button> 
+	<script>
+		var atable;
+		function multiTable() {
+			if(atable){
+					atable.remove();
+				}
+			var x = document.getElementById('num1').value;
+			var y = document.getElementById('num2').value;
+			
+			console.log(x,y);
+ 
+			if(x < 2 || x>10 || y<2 || y>10){
+				alert("Please enter numbers between 2 to 10");
+			}
+
+			else{
+				atable = document.createElement('table');
+				document.body.appendChild(atable);
+				for(var i = 1; i<=x; i++){
+					var trow = document.createElement('tr');
+						for(var j = 1; j<=y; j++){
+						var tcell = document.createElement('td');
+						tcell.innerHTML = i*j;
+						trow.appendChild(tcell);
+					}
+					atable.appendChild(trow);
+				}
+			}
+	
+		}
+	</script>
+</body>
+</html>
