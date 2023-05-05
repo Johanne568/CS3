@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<style>
+</style>
+<body> 
+	<script>  
+	let text = prompt ("please enter the ammino acid code");
+	let i = text.indexOf("AUG"); 
+	var genCode = ["amogus"]; 
+	genCode.shift(); 
+	let k = text.indexOf("UAA")|| text.index("UGA")|| text.index("UAG");
+	while(i <= k){ 
+	let result = text.slice(i,i+3);
+	r = result.length;
+	if(r < 3){
+	break;
+	}else{
+	continue;}
+	genCode.push(result); 
+	i = i + 3; 
+	} 
+	document.write("[" + genCode + "]" + " <br>");  
+	function genCheck(){   
+	let m = genCode.length;
+	var c = 0; 
+	while(c <= m){
+	if(genCode[c] == "AUG"){
+	document.write(genCode[c] + " --> Met" + "<br>"); 
+	c++;
+	}else if(genCode[c] == "UUC"||genCode[c] == "UUU"){
+	document.write(genCode[c] + " --> Phe" + "<br>"); 
+	c++;  
+	}else if(genCode[c] == "UUA"||genCode[c] == "UUG"||genCode[c] == "CUU"||genCode[c] == "CUC"||genCode[c] == "CUA"||genCode[c] == "CUG"){
+	document.write(genCode[c] + " --> Leu" + "<br>");
+	c++;
+	}else if(genCode[c] == "AUU"||genCode[c] == "AUC"||genCode[c] == "AUA"){
+	document.write(genCode[c] + " --> Ile" + "<br>"); 
+	c++;
+	}else if(genCode[c] == "GUU"||genCode[c] == "GUC"||genCode[c] == "GUA"||genCode[c] == "GUG"){
+	document.write(genCode[c] + " --> Val" + "<br>");
+	c++;
+	}else if(genCode[c] == "UCU"||genCode[c] == "UCC"||genCode[c] == "UCA"||genCode[c] == "UCG"||genCode[c] == "AGU"||genCode[c] == "AGC"){
+	document.write(genCode[c] + " --> Ser" + "<br>");
+	c++;
+	}else if(genCode[c] == "CCU"||genCode[c] == "CCC"||genCode[c] == "CCA"||genCode[c] == "CCG"){
+	document.write(genCode[c] + " --> Pro" + "<br>");
+	c++;
+	}else if(genCode[c] == "ACU"||genCode[c] == "ACC"||genCode[c] == "ACA"||genCode[c] == "ACG"){
+	document.write(genCode[c] + " --> Thr" + "<br>");
+	c++;
+	}else if(genCode[c] == "GCU"||genCode[c] == "GCC"||genCode[c] == "GCA"||genCode[c] == "GCG"){
+	document.write(genCode[c] + " --> Ala" + "<br>");
+	c++;
+	}else if(genCode[c] == "UAU"||genCode[c] == "UAC"){
+	document.write(genCode[c] + " --> Tyr" + "<br>");
+	c++;
+	}else if(genCode[c] == "UAU"||genCode[c] == "UAC"){
+	document.write(genCode[c] + " --> Tyr" + "<br>");
+	c++;
+	}else if(genCode[c] == "CAU"||genCode[c] == "CAC"){
+	document.write(genCode[c] + " --> HiS" + "<br>"); 
+	c++;
+	}else if(genCode[c] == "CAA"||genCode[c] == "CAG"){
+	document.write(genCode[c] + " --> Gln" + "<br>"); 
+	c++;
+	}else if(genCode[c] == "AAU"||genCode[c] == "AAC"){
+	document.write(genCode[c] + " --> Asn" + "<br>");
+	c++;
+	}else if(genCode[c] == "AAA"||genCode[c] == "AAG"){
+	document.write(genCode[c] + " --> Lys" + "<br>");
+	c++;
+	}else if(genCode[c] == "GAU"||genCode[c] == "GAC"){
+	document.write(genCode[c] + " --> Asp" + "<br>"); 
+	c++;
+	}else if(genCode[c] == "GAA"||genCode[c] == "GAG"){
+	document.write(genCode[c] + " --> Glu" + "<br>");
+	c++;
+	}else if(genCode[c] == "UGU"||genCode[c] == "UGC"){
+	document.write(genCode[c] + " --> Cys" + "<br>");
+	c++;
+	}else if(genCode[c] == "UGG"){
+	document.write(genCode[c] + " --> Trp" + "<br>");
+	c++;
+	}else if(genCode[c] == "CGU"||genCode[c] == "CGC"||genCode[c] == "CGA"||genCode[c] == "CGG"||genCode[c] == "AGA"||genCode[c] == "AGG"){
+	document.write(genCode[c] + " --> Arg" + "<br>");
+	c++;
+	}else if(genCode[c] == "GGU"||genCode[c] == "GGC"||genCode[c] == "GGA"||genCode[c] == "GGG"){
+	document.write(genCode[c] + " --> Gly" + "<br>");
+	c++;
+	}else if(genCode[c] == "UAA"||genCode[c] == "UAG"||genCode[c] == "UGA"){
+	document.write(genCode[c] + " --> STOP" + "<br>");
+	break;
+	} 
+	} 
+	}
+	genCheck();
+	
+</script>
+</body>
+</html>
