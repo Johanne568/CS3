@@ -160,7 +160,7 @@ select:focus {
 			<label for="tArea">Interest and Hobbies:</label><br>
 			<textarea id="tArea" name="tArea" rows="4" onblur="blurInput(this)" autocomplete="on" cols="85"></textarea><br><br>
 			<input type="button" value="Submit" class="push" onclick="out()">
-			<input type="reset" value="Reset" class="push" onclick="out()" >
+			<input type="reset" value="Reset" class="push" onclick="resetClick()" >
 		</fieldset>
 	</form> 
 	<div id="put">   .  </div>
@@ -175,9 +175,8 @@ select:focus {
 		var ta = document.getElementById("tArea").value;
 		document.getElementById("put").innerHTML="Name:" + n + "<br>" + "Userame:" + un + "<br>" + "Gender:" + g + "<br>" + "Password:" + ps + "<br>" + "Emai Address:" + em + "<br>" + "Home Address:" + ha + "<br>" + "Interest and Hobbies:" + ta + "<br>";
 		} 
-		function reset(){ 
-		location.reload(); 
-		document.getElementById("put").innerHTML=".";
+		function resetClick(){ 
+		location.reload();
 		}
 		function blurInput(input){
 				if (input.value == '') {
