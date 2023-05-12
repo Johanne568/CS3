@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Sign-Up Form</title>
+</head>
+<style>  
+body{
+background-color:#93ADFF;
+}
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 0px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  border-radius: 10px;
+}
+
+input[type=text]:focus {
+  border: 3px solid #555;  
+  border-radius: 10px; 
+}
+input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  border-radius: 10px;
+}
+
+input[type=password]:focus {
+  border: 3px solid #555;
+  border-radius: 10px;
+} 
+input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  border-radius: 10px;
+}
+
+input[type=email]:focus {
+  border: 3px solid #555;
+  border-radius: 10px;
+} 
+fieldset{
+ margin: 50px 0; 
+ margin-left: 50px; 
+ margin-right: 50px;
+ background-color:#E2FFFC; 
+ border-radius: 30px; 
+ padding: 30px;
+} 
+legend{
+ positon:absolute; 
+ border: 1px solid black;
+ border-radius: 10px; 
+ background-color:#96CBFF; 
+ padding: 10px; 
+ font-size: 30px;
+} 
+div{  
+ border:1px solid black;
+ margin: 50px 0; 
+ margin-left: 50px; 
+ margin-right: 50px;
+ background-color:#E2FFFC; 
+ border-radius: 30px; 
+ padding: 30px;
+
+} 
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  border-radius: 10px;
+}
+
+textarea:focus {
+  border: 3px solid #555;
+  border-radius: 10px;
+}  
+select{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  border-radius: 10px;
+}
+
+select:focus {
+  border: 3px solid #555;
+  border-radius: 10px;
+} 
+.push{
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;	
+  outline: none;
+  border-radius: 10px;
+}
+
+.push:focus {
+  border: 3px solid #555;
+  border-radius: 10px;
+} 
+</style>
+<body>  
+	<form method="post" autocomplete="on">
+		<fieldset>
+			<legend>Sign-Up Form</legend>
+			<label for="fullName">Complete Name:</label> 
+			<input type="text" id="fullName" class="inpt" onblur="blurInput(this)" name="fullName" autocomplete="on" required></br></br>
+			<label for="userName">Username:</label>
+			<input type="text" id="userName" class="inpt" onblur="blurInput(this)" name="userName" autocomplete="on" required></br></br> 
+			<label for="gender">Gender:</label><br>
+			<select id="gender" name="gender">
+				<option></option>
+				<option id="male" value="male" > Male</option>
+				<option id = "female" value="female"> Female </option>
+				<option id = "pntm" value="preferNotToMention"> Prefer not to mention </option>
+			</select> 
+			<br>
+			<label for="password">Password:</label>
+			<input type="password" id="password" class="inpt" onblur="blurInput(this)" name="password"  autocomplete="on" required></br></br>
+			<label for="age">Email Address:</label>
+			<input type="email" id="email" class="inpt" onblur="blurInput(this)" name="email" autocomplete="on" required></br></br>
+			<label for="address">Home Address:</label> 
+			<input type="text" id="address" class="inpt" onblur="blurInput(this)" name="address" autocomplete="on" required ></br></br>  
+			<label for="tArea">Interest and Hobbies:</label><br>
+			<textarea id="tArea" name="tArea" rows="4" onblur="blurInput(this)" autocomplete="on" cols="85"></textarea><br><br>
+			<input type="button" value="Submit" class="push" onclick="out()">
+			<input type="button" value="Reset" class="push" onclick="reset()" >
+		</fieldset>
+	</form> 
+	<div id="put">   .  </div>
+	<script>  
+		function reset(){ 
+		location.reload(); 
+		document.getElementById("put").innerHTML=".";
+		}
+		function out(){ 
+		var un = document.getElementById("userName").value; 
+		var n = document.getElementById("fullName").value; 
+		var g = document.getElementById("gender").value;  
+		var ps = document.getElementById("password").value;  
+		var em = document.getElementById("email").value; 
+		var ha = document.getElementById("address").value; 
+		var ta = document.getElementById("tArea").value;
+		document.getElementById("put").innerHTML="Name:" + n + "<br>" + "Userame:" + un + "<br>" + "Gender:" + g + "<br>" + "Password:" + ps + "<br>" + "Emai Address:" + em + "<br>" + "Home Address:" + ha + "<br>" + "Interest and Hobbies:" + ta + "<br>";
+		} 
+		function blurInput(input){
+				if (input.value == '') {
+					input.style.border = "3px solid red";
+				} 
+				else{
+					input.style.border = "3px solid green";
+				}
+			}
+	</script>
+</body>
+</html>
