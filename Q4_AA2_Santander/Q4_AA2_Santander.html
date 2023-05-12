@@ -165,10 +165,6 @@ select:focus {
 	</form> 
 	<div id="put">   .  </div>
 	<script>  
-		function reset(){ 
-		location.reload(); 
-		document.getElementById("put").innerHTML=".";
-		}
 		function out(){ 
 		var un = document.getElementById("userName").value; 
 		var n = document.getElementById("fullName").value; 
@@ -179,6 +175,10 @@ select:focus {
 		var ta = document.getElementById("tArea").value;
 		document.getElementById("put").innerHTML="Name:" + n + "<br>" + "Userame:" + un + "<br>" + "Gender:" + g + "<br>" + "Password:" + ps + "<br>" + "Emai Address:" + em + "<br>" + "Home Address:" + ha + "<br>" + "Interest and Hobbies:" + ta + "<br>";
 		} 
+		function reset(){ 
+		location.reload(); 
+		document.getElementById("put").innerHTML=".";
+		}
 		function blurInput(input){
 				if (input.value == '') {
 					input.style.border = "3px solid red";
